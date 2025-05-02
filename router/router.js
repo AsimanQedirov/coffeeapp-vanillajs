@@ -18,6 +18,8 @@ export const router = {
 
     if (pageElement) {
       main.innerHTML = ""; // Clear the main content
+      let headerElement = document.createElement("header-component");
+      main.appendChild(headerElement);
       main.appendChild(pageElement);
     }
   },
