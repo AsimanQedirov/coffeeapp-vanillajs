@@ -11,7 +11,7 @@ export const router = {
     let pageElement = null;
 
     switch (path) {
-      case "":
+      case "/":
         pageElement = document.createElement("home-page");
         break;
     }
@@ -35,6 +35,6 @@ export const router = {
       router.go(event.state.route, false);
     });
 
-    router.go(location.pathname.slice(1)); // Load the initial page
+    router.go(location.pathname); // Load the initial page
   },
 };

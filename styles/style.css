@@ -1,0 +1,26 @@
+@import url("./header.css");
+@import url("./reset.css");
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 33%;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.card img {
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}

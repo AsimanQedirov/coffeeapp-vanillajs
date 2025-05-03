@@ -1,5 +1,26 @@
 [
     {
-        "id" :  1
+        "id" :  1,
+        "image" : "https://static.vecteezy.com/system/resources/thumbnails/023/513/862/small_2x/hot-coffee-cup-with-coffee-beans-wallpaper-coffee-photo.jpg",
+        "name" : "Coffee",
+        "kind_of_product" : 12
+    },
+    {
+        "id" :  2,
+        "image" : "https://cff2.earth.com/uploads/2024/02/08140346/drinking-tea_every-day_delays-aging_mint-tea_1m.jpg",
+        "name" : "Tea",
+        "kind_of_product" : 4
+    },
+    {
+        "id" :  3,
+        "image" : "https://domf5oio6qrcr.cloudfront.net/medialibrary/7909/conversions/b8a1309a-ba53-48c7-bca3-9c36aab2338a-thumb.jpg",
+        "name" : "Water",
+        "kind_of_product" : 2
+    },
+    {
+        "id" :  4,
+        "image" : "https://static01.nyt.com/images/2021/11/02/dining/dg-Tall-and-Creamy-Cheesecake-copy/dg-Tall-and-Creamy-Cheesecake-threeByTwoMediumAt2X.jpg",
+        "name" : "Cheesecake",
+        "kind_of_product" : 5
     }
 ]
