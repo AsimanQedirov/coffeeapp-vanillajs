@@ -11,15 +11,13 @@ export const router = {
     let pageElement = null;
 
     switch (path) {
-      case "home":
+      case "":
         pageElement = document.createElement("home-page");
         break;
     }
 
     if (pageElement) {
       main.innerHTML = ""; // Clear the main content
-      let headerElement = document.createElement("header-component");
-      main.appendChild(headerElement);
       main.appendChild(pageElement);
     }
   },

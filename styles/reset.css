@@ -1,0 +1,7 @@
+@import url("./header.css");
+body {
+    padding: 0;
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
