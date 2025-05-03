@@ -10,7 +10,7 @@ class HomePage extends HTMLElement {
   render(event) {
     if (store.homePageData && Array.isArray(store.homePageData)) {
       const container = document.createElement("div");
-      container.className = "card-container";
+      container.className = "container";
       for (let data of store.homePageData) {
         let cardElement = document.createElement("div");
         cardElement.className = "card";
@@ -23,7 +23,7 @@ class HomePage extends HTMLElement {
       }
       main.append(container);
     } else {
-      main.innerHTML = `<div class='card-container'> There is no data</div>`;
+      main.innerHTML = `<div class='container'> There is no data</div>`;
     }
   }
   connectedCallback() {

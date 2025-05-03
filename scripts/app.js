@@ -4,6 +4,7 @@ import { router } from "../router/router.js";
 
 // pages
 import "../pages/home.js";
+import "../pages/not-found.js";
 import { proxiedStore as store } from "../store/store.js";
 
 window.app = store;

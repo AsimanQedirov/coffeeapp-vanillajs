@@ -14,6 +14,10 @@ export const router = {
       case "/":
         pageElement = document.createElement("home-page");
         break;
+
+      default:
+        pageElement = document.createElement("not-found-page");
+        break;
     }
 
     if (pageElement) {
