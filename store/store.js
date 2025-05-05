@@ -1,7 +1,7 @@
 const store = {
   homePageData: null,
   productsPageData: null,
-  cartItems: null,
+  cartItems: [],
 };
 
 const proxiedStore = new Proxy(store, {

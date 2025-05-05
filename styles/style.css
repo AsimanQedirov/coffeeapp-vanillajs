@@ -37,3 +37,16 @@ general-product-item , product-item {
     width: 40px;
     height: 40px;
 }
+
+basket-button{
+    position: relative;
+}
+basket-button #badge{
+    position: absolute;
+    top: -5px;
+    right: -13px;
+    background-color: rgb(32, 181, 184);
+    padding: 3px 7px;
+    border-radius: 20px;
+    font-size: 14px;
+}
