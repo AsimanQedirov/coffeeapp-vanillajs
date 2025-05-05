@@ -14,7 +14,9 @@ export const router = {
       case "/":
         pageElement = document.createElement("home-page");
         break;
-
+      case "/products":
+        pageElement = document.createElement("products-page");
+        break;
       default:
         pageElement = document.createElement("not-found-page");
         break;

@@ -1,0 +1,197 @@
+[
+    {
+      "id": 1,
+      "name": "Espresso",
+      "description": "Rich and bold espresso shot.",
+      "price": 2.5,
+      "image": "https://images.unsplash.com/photo-1512568400610-62da28bc8a13",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 2,
+      "name": "Cappuccino",
+      "description": "Espresso with steamed milk and foam.",
+      "price": 3.5,
+      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 3,
+      "name": "Latte",
+      "description": "Creamy latte with a shot of espresso.",
+      "price": 4.0,
+      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 4,
+      "name": "Americano",
+      "description": "Espresso diluted with hot water.",
+      "price": 2.8,
+      "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 5,
+      "name": "Mocha",
+      "description": "Espresso with chocolate and steamed milk.",
+      "price": 4.5,
+      "image": "https://gatherforbread.com/wp-content/uploads/2014/10/Dark-Chocolate-Mocha-Square.jpg",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 6,
+      "name": "Macchiato",
+      "description": "Espresso topped with a dollop of foam.",
+      "price": 3.0,
+      "image": "https://images.unsplash.com/photo-1534778101976-62847782c213",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 7,
+      "name": "Flat White",
+      "description": "Espresso with micro-foamed milk.",
+      "price": 3.8,
+      "image": "https://www.foodandwine.com/thmb/xQZv2CX6FO5331PYK7uGPF1we9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Flat-White-FT-BLOG0523-b11f6273c2d84462954c2163d6a1076d.jpg",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 8,
+      "name": "Iced Coffee",
+      "description": "Chilled coffee served over ice.",
+      "price": 3.0,
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 9,
+      "name": "Cold Brew",
+      "description": "Smooth and refreshing cold brew coffee.",
+      "price": 3.5,
+      "image": "https://lifesimplified.gorenje.com/wp-content/uploads/2024/06/gorenje-blog-refreshing_cold_brew_coffee.jpg",
+      "category": {
+        "id": 1,
+        "name": "Coffee",
+        "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+        "kind_of_product": 12
+      }
+    },
+    {
+      "id": 10,
+      "name": "Tea",
+      "description": "Classic hot tea in various flavors.",
+      "price": 2.0,
+      "image": "https://t3.ftcdn.net/jpg/02/18/53/26/360_F_218532663_Meqbe06Mqr4X7DV3vfM4usMkfML47thJ.jpg",
+      "category": {
+        "id": 2,
+        "name": "Tea",
+        "image": "https://images.unsplash.com/photo-1568849676085-9d3b0d2c6c6d",
+        "kind_of_product": 4
+      }
+    },
+    {
+      "id": 11,
+      "name": "Croissant",
+      "description": "Flaky and buttery croissant.",
+      "price": 2.5,
+      "image": "https://images.unsplash.com/photo-1620146344904-097a0002d797",
+      "category": {
+        "id": 4,
+        "name": "Cheesecake",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d",
+        "kind_of_product": 5
+      }
+    },
+    {
+      "id": 12,
+      "name": "Muffin",
+      "description": "Soft and moist muffin in assorted flavors.",
+      "price": 2.8,
+      "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150",
+      "category": {
+        "id": 4,
+        "name": "Cheesecake",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d",
+        "kind_of_product": 5
+      }
+    },
+    {
+      "id": 13,
+      "name": "Bagel",
+      "description": "Freshly baked bagel with cream cheese.",
+      "price": 3.0,
+      "image": "https://leschatsgourmets.com/wp-content/uploads/2024/07/leschatsgourmets-bagels-a-la-ricotta-citronnee-saumon-et-avocat-1200x732.jpg",
+      "category": {
+        "id": 4,
+        "name": "Cheesecake",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d",
+        "kind_of_product": 5
+      }
+    },
+    {
+      "id": 14,
+      "name": "Brownie",
+      "description": "Rich and fudgy chocolate brownie.",
+      "price": 3.5,
+      "image": "https://images.unsplash.com/photo-1564355808539-22fda35bed7e",
+      "category": {
+        "id": 4,
+        "name": "Cheesecake",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d",
+        "kind_of_product": 5
+      }
+    },
+    {
+      "id": 15,
+      "name": "Cheesecake",
+      "description": "Creamy cheesecake with a graham cracker crust.",
+      "price": 4.5,
+      "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d",
+      "category": {
+        "id": 4,
+        "name": "Cheesecake",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d",
+        "kind_of_product": 5
+      }
+    }
+]
