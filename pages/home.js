@@ -12,15 +12,9 @@ class HomePage extends HTMLElement {
       const container = document.createElement("div");
       container.className = "container";
       for (let data of store.homePageData) {
-        let cardElement = document.createElement("div");
-        cardElement.className = "card";
-        cardElement.innerHTML = `
-            <img class='card-image' src='${data.image}' alt='${data.name}' />
-            <h3>Product name : ${data.name}</h3>
-            <p>Kind of product : ${data.kind_of_product}</p>
-            <img src='../assets/icons/basket.svg' class='add-to-basket' alt='trash icon' width='20' height='20'/>
-        `;
-        container.append(cardElement);
+        const productItem = document.createElement("general-product-item");
+        productItem.dataset.data = JSON.stringify(data);
+        container.append(productItem);
       }
       main.append(container);
     } else {
