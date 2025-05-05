@@ -16,9 +16,10 @@ class ProductPage extends HTMLElement {
         let cardElement = document.createElement("div");
         cardElement.className = "card";
         cardElement.innerHTML = `
-                <img src='${data.image}' alt='${data.name}' loading='lazy' />
+                <img class='card-image' src='${data.image}' alt='${data.name}' loading='lazy' />
                 <h3>Product name : ${data.name}</h3>
                 <p>Price : ${data.price}</p>
+                <img src='../assets/icons/basket.svg' class='add-to-basket' alt='trash icon' width='20' height='20'/>
             `;
         container.append(cardElement);
       }

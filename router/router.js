@@ -29,6 +29,7 @@ export const router = {
   },
   init: () => {
     // add event lister for each router link
+
     $$("a.router-link").forEach((route) => {
       route.addEventListener("click", (e) => {
         e.preventDefault();
