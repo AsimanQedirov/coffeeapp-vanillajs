@@ -17,6 +17,9 @@ export const router = {
       case "/products":
         pageElement = document.createElement("products-page");
         break;
+      case "/basket":
+        pageElement = document.createElement("basket-page");
+        break;
       default:
         pageElement = document.createElement("not-found-page");
         break;
@@ -33,8 +36,8 @@ export const router = {
     $$("a.router-link").forEach((route) => {
       route.addEventListener("click", (e) => {
         e.preventDefault();
-        const path = e.target.getAttribute("href");
-        router.go(path);
+        const path = e.currentTarget.getAttribute("href");
+        path && path !== location.pathname && router.go(path); // it avoids to reload page repititive
       });
     });
 

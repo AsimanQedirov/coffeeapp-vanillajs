@@ -1,5 +1,7 @@
 ## About CoffeeApp
 
+**You don't need to use any framework or library (React and Vue) to create a SPA application.**
+
 CoffeeApp is a lightweight, VanillaJS-based application designed to enhance your coffee experience. Whether you're brewing at home or exploring new coffee recipes, CoffeeApp is here to help.
 
 ## Features

@@ -1,6 +1,42 @@
 @import url("./header.css");
 @import url("./reset.css");
 
+.paper{
+
+}
+.d-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.align-start{
+    align-items: start;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.gap-10{
+    gap: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.p-20{
+    padding: 20px;
+}
+.bg-white{
+    background-color: white;
+}
+.border-radius-8{
+    border-radius: 8px;
+}
 .container{
     display: flex;
     flex-direction: row;
@@ -50,3 +86,43 @@ basket-button #badge{
     border-radius: 20px;
     font-size: 14px;
 }
+
+.back-button{
+    background-color: rgb(170, 125, 93);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+basket-item{
+    width: 100%;
+    border: 1px solid rgb(217, 216, 216);
+    border-radius: 8px;
+    padding: 10px;
+}
+basket-item .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+basket-item .card-body{
+    display: flex;
+    gap: 10px;
+}
+basket-item .card-image{
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+[id^="trash-item-"] img {
+    /* your styles here */
+    width: 20px;
+    height: 20px;
+  }
