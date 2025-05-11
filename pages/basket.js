@@ -8,8 +8,9 @@ export default class BasketPage extends HTMLElement {
   goBack() {
     window.router.go("/products");
   }
-  connectedCallback() {
+  render() {
     const container = document.createElement("div");
+    this.innerHTML = "";
     container.className =
       "bg-white d-flex flex-column p-20 mt-20 align-center gap-10";
     const noElement = document.createElement("h2");
@@ -28,9 +29,15 @@ export default class BasketPage extends HTMLElement {
         container.appendChild(basketItem);
       }
     }
-    console.log(container);
 
     this.append(container);
+  }
+  connectedCallback() {
+    this.render();
+
+    window.addEventListener("cartItems-change", () => {
+      this.render();
+    });
   }
 }
 

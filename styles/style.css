@@ -125,4 +125,5 @@ basket-item .card-image{
     /* your styles here */
     width: 20px;
     height: 20px;
+    cursor: pointer;
   }
