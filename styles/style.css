@@ -4,6 +4,9 @@
 .paper{
 
 }
+.w-100{
+    width: 100%;
+}
 .d-flex{
     display: flex;
 }
@@ -26,6 +29,9 @@
     gap: 10px;
 }
 .mt-20{
+    margin-top: 20px;
+}
+.mt-10{
     margin-top: 20px;
 }
 .p-20{
@@ -126,4 +132,29 @@ basket-item .card-image{
     width: 20px;
     height: 20px;
     cursor: pointer;
+  }
+basket-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+  basket-form-element input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  basket-form-element button{
+    padding: 10px 20px;
+    background-color: rgb(32, 181, 184);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
   }

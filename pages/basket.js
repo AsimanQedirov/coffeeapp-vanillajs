@@ -1,8 +1,15 @@
 import { proxiedStore as store } from "../store/store.js";
+import FormElement from "../components/basket-form-element.js";
 
 export default class BasketPage extends HTMLElement {
   constructor() {
     super();
+  }
+
+  renderFormElement(){
+    const formElement = document.createElement("basket-form-element");
+    formElement.setAttribute("class" , "bg-white d-flex flex-column p-20 mt-20 align-center gap-10")
+    this.prepend(formElement)
   }
 
   goBack() {
@@ -12,7 +19,7 @@ export default class BasketPage extends HTMLElement {
     const container = document.createElement("div");
     this.innerHTML = "";
     container.className =
-      "bg-white d-flex flex-column p-20 mt-20 align-center gap-10";
+      "bg-white d-flex flex-column p-20 mt-20 align-center gap-10 w-100";
     const noElement = document.createElement("h2");
     if (!store.cartItems.length) {
       noElement.textContent = "There is no element in the basket";
@@ -28,9 +35,9 @@ export default class BasketPage extends HTMLElement {
         basketItem.dataset.data = JSON.stringify(item);
         container.appendChild(basketItem);
       }
+      this.renderFormElement();
     }
-
-    this.append(container);
+    this.prepend(container);
   }
   connectedCallback() {
     this.render();
