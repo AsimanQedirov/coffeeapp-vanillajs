@@ -23,6 +23,7 @@ CoffeeApp is a lightweight, VanillaJS-based application designed to enhance your
 - Advanced coffee recipe recommendations based on user preferences.
 - Offline mode to access saved recipes without an internet connection.
 - Enhanced accessibility features for a more inclusive user experience.
+- Nested pages routing
 
 ## Feedback
 

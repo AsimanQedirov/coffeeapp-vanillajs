@@ -1,9 +1,9 @@
 export const api = {
-  fetchHomePage: async () => {
+  getHomePageData: async () => {
     const result = await fetch("/data/intro.json");
     return await result.json();
   },
-  fetchProductPage: async () => {
+  getAllProducts: async () => {
     const result = await fetch("/data/products.json");
     return await result.json();
   },
