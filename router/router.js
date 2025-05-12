@@ -9,7 +9,7 @@ export const router = {
     }
 
     let pageElement = null;
-
+        
     switch (path) {
       case "/":
         pageElement = document.createElement("home-page");
@@ -20,11 +20,14 @@ export const router = {
       case "/basket":
         pageElement = document.createElement("basket-page");
         break;
+      case path.match(/^\/products\/\d+$/)?.input:
+        pageElement = document.createElement("product-detail-page");
+        break;
       default:
         pageElement = document.createElement("not-found-page");
         break;
     }
-
+    
     if (pageElement) {
       main.innerHTML = ""; // Clear the main content
       main.appendChild(pageElement);

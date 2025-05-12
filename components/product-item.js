@@ -1,4 +1,3 @@
-import { $ } from "../scripts/shorthand.js";
 import { addItemsToCart } from "../services/addItemsToCart.js";
 
 export default class ProductItem extends HTMLElement {
@@ -17,11 +16,19 @@ export default class ProductItem extends HTMLElement {
                 loading='lazy' />
                 <h3>Product name : ${props.name}</h3>
                 <p>Price : ${props.price}</p>
-                <span id='basket-item-${props.id}'><img src='../assets/icons/basket.svg' class='add-to-basket' alt='trash icon' width='20' height='20'/></span>
+                <div class='d-flex justify-end'><span id='basket-item-${props.id}'><img src='../assets/icons/basket.svg' class='add-to-basket' alt='trash icon' width='20' height='20'/></span></div>
           `;
     this.appendChild(cardElement);
-    $(`#basket-item-${props.id}`).addEventListener("click", () =>
-      addItemsToCart(props)
+    cardElement.addEventListener("click", (event) =>
+    {
+      const target = event.target;
+      if (target.closest(`#basket-item-${props.id}`)) {
+       addItemsToCart(props)
+      }
+      else{
+        window.router.go(`/products/${props.id}`)
+      }
+    }
     );
   }
 }

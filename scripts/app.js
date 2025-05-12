@@ -7,6 +7,7 @@ import "../pages/home.js";
 import "../pages/products.js";
 import "../pages/not-found.js";
 import "../pages/basket.js";
+import "../pages/product-detail.js";
 
 import "../components/general-product-item.js";
 import "../components/product-item.js";
