@@ -165,3 +165,8 @@ basket-page{
     margin-top: 20px;
     width: 100%;
   }
+  product-detail-page img{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+  }

@@ -19,17 +19,14 @@ export default class ProductItem extends HTMLElement {
                 <div class='d-flex justify-end'><span id='basket-item-${props.id}'><img src='../assets/icons/basket.svg' class='add-to-basket' alt='trash icon' width='20' height='20'/></span></div>
           `;
     this.appendChild(cardElement);
-    cardElement.addEventListener("click", (event) =>
-    {
+    cardElement.addEventListener("click", (event) => {
       const target = event.target;
       if (target.closest(`#basket-item-${props.id}`)) {
-       addItemsToCart(props)
+        addItemsToCart(props);
+      } else {
+        window.router.go(`/products-${props.id}`);
       }
-      else{
-        window.router.go(`/products/${props.id}`)
-      }
-    }
-    );
+    });
   }
 }
 

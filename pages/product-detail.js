@@ -14,9 +14,11 @@ class ProductDetail extends HTMLElement {
 
     if (product) {
       container.innerHTML = `
-            <h1>${product.name}</h1>
-            <p>${product.description}</p>
-            <p>Price: $${product.price}</p>
+        <img src='${product.image}' alt='${product.name}'/>
+        <h1>${product.name}</h1>
+        <p>${product.description}</p>
+        <p>Price: ${product.price}<b>$</b></p>
+        <p>Main category: ${product.category.name || "N/A"}</p>
         `;
     } else {
       container.innerHTML = `<p>Product details not available.</p>`;

@@ -45,7 +45,7 @@ export const router = {
     });
 
     window.addEventListener("popstate", (event) => {
-      router.go(event.state.route, false);
+      router.go(event.state.route || event.state.path, false);
     });
 
     router.go(location.pathname); // Load the initial page
